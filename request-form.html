@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Peer Tutoring Request</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Request a Tutoring Session</h1>
+
+    <form action="process-request.php" method="post">
+
+        <label for="course">Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Select a course</option>
+            <option value="IS 6465">IS 6465</option>
+            <option value="IS 6495">IS 6495</option>
+            <option value="IS 6570">IS 6570</option>
+        </select>
+
+        <label for="topic">Topic:</label>
+        <input type="text" id="topic" name="topic" required>
+
+        <label for="preferreddate">Preferred Date:</label>
+        <input type="date" id="preferreddate"
+               name="preferreddate" required>
+
+        <label for="preferredtime">Preferred Time:</label>
+        <select id="preferredtime" name="preferredtime" required>
+            <option value="">Select a time</option>
+            <option value="Morning">Morning</option>
+            <option value="Afternoon">Afternoon</option>
+            <option value="Evening">Evening</option>
+        </select>
+
+        <button type="submit">Submit Request</button>
+
+    </form>
+</body>
+</html>
